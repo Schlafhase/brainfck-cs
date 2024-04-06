@@ -116,10 +116,10 @@ internal class Program
         }
         private void executeLoop(string loop)
         {
-            do
+            while (memory[pointer] != 0)
             {
                 ParseBrainFuckCommands(loop);
-            } while (memory[pointer] != 0);
+            }
         }
 
         public List<int> ParseBrainFuckCommands(string commands)
